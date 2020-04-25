@@ -1,92 +1,58 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ogakin Bookmarks</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{asset('css/style.css')}}">
+</head>
+<body>
 
-        <title>Laravel</title>
+  <nav>
+    <div>
+      <ul>
+        <li class="sys_title">Ogakin Bookmarks</li>
+        @if (Route::has('login'))
+          @auth
+            <li class="header-right"><a href="{{ url('/home') }}">Home</a></li>
+            <li class="header-right"><a href="{{ url('/submit') }}">Add A Link</a></li>
+          @else
+            <li class="header-right"><a href="{{ route('login') }}">Login</a></li>
+            <li class="header-right"><a href="{{ route('register') }}">Register</a></li>
+          @endauth
+        @endif
+      </ul>
+    </div>
+  </nav>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+  <main>
+    <div class="side-bar">
+      <ul>
+        <li>Folder1</li>
+        <li>Folder2</li>
+        <li>Folder3</li>
+        <li>Folder4</li>
+      </ul>
+    </div>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <div class="links">
+      <ul>
+        @foreach ($links as $link)
+            <li class="link">
+              <a href="{{ $link->url }}" target="_blank">{{ $link->title }}</a>
+              <p>{{$link->description}}</p>
+            </li>
+        @endforeach
+      </ul>
+    </div>
+  </main>
 
-            .full-height {
-                height: 100vh;
-            }
+  <footer>
+    <small>&copy; Copyright 2020, Naoyuki Ishida</small>
+  </footer>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-      <div class="flex-center position-ref full-height">
-          @if (Route::has('login'))
-              <div class="top-right links">
-                  @auth
-                      <a href="{{ url('/home') }}">Home</a>
-                  @else
-                      <a href="{{ route('login') }}">Login</a>
-                      <a href="{{ route('register') }}">Register</a>
-                  @endauth
-              </div>
-          @endif
-
-          <div class="content">
-              <div class="title m-b-md">
-                  Laravel
-              </div>
-
-              <div class="links">
-                  @foreach ($links as $link)
-                      <a href="{{ $link->url }}">{{ $link->title }}</a>
-                  @endforeach
-              </div>
-          </div>
-      </div>
-    </body>
+</body>
 </html>

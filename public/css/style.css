@@ -1,0 +1,111 @@
+/*** Global style***/
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+a:link,
+a:visited {
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*** Feature style***/
+
+nav {
+    text-align: center;
+    height: 70px;
+    background-color: #f2f2f2;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #636b6f !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    color: #636b6f !important;
+    background-color: #fafafa;
+    text-decoration: underline;
+}
+
+nav div ul .sys_title {
+    font-size: 3em;
+}
+
+nav div ul .header-right {
+    font-size: 1.4em;
+    margin-left: 30px;
+}
+
+nav div ul .header-right a {
+    text-decoration: none;
+}
+
+main {
+    margin: auto 40px;
+    display: flex;
+}
+
+main div {
+    flex-grow: 1;
+}
+
+.links {
+    width: 80%;
+    display: inline-block;
+}
+
+.link {
+    margin-bottom: 10px;
+}
+
+.link a {
+    border-radius: 10px 10px 0 0;
+    height: 20px;
+    padding: 3px 5px;
+    display: block;
+    background-color: #00cc99;
+    vertical-align: middle;
+}
+
+.link a:hover {
+    background-color: #00b386;
+}
+
+.link p {
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    padding: 5px;
+}
+.side-bar {
+    width: 20%;
+    display: inline-block;
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 1.2em
+}
