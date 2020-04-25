@@ -8,60 +8,14 @@ html, body {
     margin: 0;
 }
 
-a:link,
-a:visited {
-    color: #fff;
-}
-
 li {
     list-style: none;
 }
 
 
 /*** Feature style***/
-
-nav {
-    text-align: center;
-    height: 70px;
-    background-color: #f2f2f2;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color: #636b6f !important;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-nav ul li a:hover {
-    color: #636b6f !important;
-    background-color: #fafafa;
-    text-decoration: underline;
-}
-
-nav div ul .sys_title {
-    font-size: 3em;
-}
-
-nav div ul .header-right {
-    font-size: 1.4em;
-    margin-left: 30px;
-}
-
-nav div ul .header-right a {
-    text-decoration: none;
-}
-
 main {
-    margin: auto 40px;
+    margin: auto 100px;
     display: flex;
 }
 
@@ -80,11 +34,17 @@ main div {
 
 .link a {
     border-radius: 10px 10px 0 0;
-    height: 20px;
+    height: 30px;
     padding: 3px 5px;
+    font-size: 1.2em;
     display: block;
     background-color: #00cc99;
     vertical-align: middle;
+}
+
+.link a:link,
+.link a:visited {
+    color: #fff;
 }
 
 .link a:hover {
@@ -99,6 +59,7 @@ main div {
     margin: 0;
     padding: 5px;
 }
+
 .side-bar {
     width: 20%;
     display: inline-block;
@@ -107,5 +68,46 @@ main div {
 footer {
     background-color: #f2f2f2;
     text-align: center;
-    font-size: 1.2em
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    color: #636b6f !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #636b6f !important;
+    background-color: #fafafa;
+    text-decoration: underline;
+}
+
+
+/*** Submit a link page ***/
+.submit-link-head h1 {
+    margin: auto;
+}
+
+.submit-link-title {
+    width: 90%;
+}
+
+.submit-link-url {
+    width: 90%;
+}
+
+.submit-link-description {
+    width: 90%;
 }

@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 
 Route::get('/', function () {
     $links = \App\Link::all();
-    return view('welcome', ['links' => $links]);
+    return view('welcome', compact('links'));
 });
 
 Route::get('/submit', function () {
@@ -32,7 +32,7 @@ Route::post('/submit', function (Request $request) {
 
     $link = tap(new App\Link($data))->save();
 
-    return redirect('/');
+    return redirect('/home');
 });
 
 Auth::routes();
