@@ -5,7 +5,7 @@
             <h1>Submit a link</h1>
         </div>
         <div class="row">
-            <div class="col-md-8 offset-md-2"
+            <div class="col-md-8 offset-md-2">
                 <form action="/submit" method="post">
                     @csrf
                     @if ($errors->any())

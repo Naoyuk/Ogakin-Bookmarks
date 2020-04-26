@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'laravel'),
+    //'name' => env('APP_NAME', 'laravel'),
+    'name' => 'Ogakin Links',
 
     /*
     |--------------------------------------------------------------------------

@@ -14,11 +14,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    $links = \App\Link::all();
-    return view('welcome', compact('links'));
-});
+Route::get('/', 'LinkController@index');
 
+Route::get('/submit', 'LinkController@new');
+
+Route::post('/submit', 'LinkController@store');
+
+/*
 Route::get('/submit', function () {
     return view('submit');
 });
@@ -32,8 +34,9 @@ Route::post('/submit', function (Request $request) {
 
     $link = tap(new App\Link($data))->save();
 
-    return redirect('/home');
+    return redirect('/');
 });
+*/
 
 Auth::routes();
 
