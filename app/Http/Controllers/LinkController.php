@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LinkController extends Controller
 {
   public function index() {
+    /*
     $links = \App\Link::all();
+    */
+    $links = DB::select('SELECT * FROM LINKS ORDER BY created_at DESC');
     return view('links', compact('links'));
   }
 
