@@ -20,6 +20,8 @@ Route::get('/submit', 'LinkController@new');
 
 Route::post('/submit', 'LinkController@store');
 
+Route::delete('/link/{link}', 'LinkController@destroy');
+
 /*
 Route::get('/submit', function () {
     return view('submit');
@@ -39,5 +41,3 @@ Route::post('/submit', function (Request $request) {
 */
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

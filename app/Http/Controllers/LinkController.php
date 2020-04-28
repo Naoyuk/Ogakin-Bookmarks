@@ -11,7 +11,7 @@ class LinkController extends Controller
     /*
     $links = \App\Link::all();
     */
-    $links = DB::select('SELECT * FROM LINKS ORDER BY created_at DESC');
+    $links = DB::select('SELECT * FROM LINKS ORDER BY id DESC');
     return view('links', compact('links'));
   }
 
@@ -28,13 +28,20 @@ class LinkController extends Controller
 
     $link = tap(new \App\Link($data))->save();
     /*
-    上記は以下のワンライナー
+    上記は以下に対するシンタックスシュガー
     $link = new \App\Link();
     $link->url = $request->url;
     $link->title = $request->title;
     $link->description = $request->description;
     $link->save();
     */
+
+    return redirect('/');
+  }
+
+  public function destroy($id) {
+    $link = \App\Link::findOrFail($id);
+    $link->delete();
 
     return redirect('/');
   }

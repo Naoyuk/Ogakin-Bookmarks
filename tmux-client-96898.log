@@ -1,0 +1,65 @@
+1587920571.363110 client started (96898): version 3.1, socket /tmp//tmux-501/default, protocol 8
+1587920571.363188 on Darwin 19.4.0 Darwin Kernel Version 19.4.0: Wed Mar  4 22:28:40 PST 2020; root:xnu-6153.101.6~15/RELEASE_X86_64; libevent 2.1.11-stable (select)
+1587920571.363238 socket is /tmp//tmux-501/default
+1587920571.363267 trying connect
+1587920571.363315 connect failed: No such file or directory
+1587920571.363393 lock file is /tmp//tmux-501/default.lock
+1587920571.363513 flock succeeded
+1587920571.363528 got lock (6)
+1587920571.363542 trying connect
+1587920571.363570 connect failed: No such file or directory
+1587920571.364039 add peer 0x10bad2000: 7 (0x0)
+1587920571.370260 sending message 100 to peer 0x10bad2000 (4 bytes)
+1587920571.370309 sending message 101 to peer 0x10bad2000 (15 bytes)
+1587920571.370326 sending message 102 to peer 0x10bad2000 (13 bytes)
+1587920571.370339 sending message 108 to peer 0x10bad2000 (27 bytes)
+1587920571.370372 sending message 104 to peer 0x10bad2000 (0 bytes)
+1587920571.370387 sending message 107 to peer 0x10bad2000 (4 bytes)
+1587920571.370400 sending message 105 to peer 0x10bad2000 (60 bytes)
+1587920571.370413 sending message 105 to peer 0x10bad2000 (66 bytes)
+1587920571.370426 sending message 105 to peer 0x10bad2000 (32 bytes)
+1587920571.370439 sending message 105 to peer 0x10bad2000 (15 bytes)
+1587920571.370452 sending message 105 to peer 0x10bad2000 (19 bytes)
+1587920571.370465 sending message 105 to peer 0x10bad2000 (14 bytes)
+1587920571.370478 sending message 105 to peer 0x10bad2000 (31 bytes)
+1587920571.370492 sending message 105 to peer 0x10bad2000 (15 bytes)
+1587920571.370507 sending message 105 to peer 0x10bad2000 (15 bytes)
+1587920571.370525 sending message 105 to peer 0x10bad2000 (33 bytes)
+1587920571.370537 sending message 105 to peer 0x10bad2000 (23 bytes)
+1587920571.370549 sending message 105 to peer 0x10bad2000 (648 bytes)
+1587920571.370562 sending message 105 to peer 0x10bad2000 (75 bytes)
+1587920571.370574 sending message 105 to peer 0x10bad2000 (19 bytes)
+1587920571.370587 sending message 105 to peer 0x10bad2000 (20 bytes)
+1587920571.370598 sending message 105 to peer 0x10bad2000 (20 bytes)
+1587920571.370610 sending message 105 to peer 0x10bad2000 (20 bytes)
+1587920571.370622 sending message 105 to peer 0x10bad2000 (57 bytes)
+1587920571.370635 sending message 105 to peer 0x10bad2000 (13 bytes)
+1587920571.370648 sending message 105 to peer 0x10bad2000 (19 bytes)
+1587920571.370660 sending message 105 to peer 0x10bad2000 (16 bytes)
+1587920571.370672 sending message 105 to peer 0x10bad2000 (61 bytes)
+1587920571.370684 sending message 105 to peer 0x10bad2000 (33 bytes)
+1587920571.370696 sending message 105 to peer 0x10bad2000 (8 bytes)
+1587920571.370707 sending message 105 to peer 0x10bad2000 (22 bytes)
+1587920571.370719 sending message 105 to peer 0x10bad2000 (30 bytes)
+1587920571.370731 sending message 105 to peer 0x10bad2000 (11 bytes)
+1587920571.370806 sending message 105 to peer 0x10bad2000 (8 bytes)
+1587920571.370831 sending message 105 to peer 0x10bad2000 (32 bytes)
+1587920571.370852 sending message 105 to peer 0x10bad2000 (40 bytes)
+1587920571.370873 sending message 105 to peer 0x10bad2000 (44 bytes)
+1587920571.370893 sending message 105 to peer 0x10bad2000 (55 bytes)
+1587920571.370915 sending message 105 to peer 0x10bad2000 (28 bytes)
+1587920571.370935 sending message 105 to peer 0x10bad2000 (46 bytes)
+1587920571.370955 sending message 105 to peer 0x10bad2000 (42 bytes)
+1587920571.370975 sending message 105 to peer 0x10bad2000 (447 bytes)
+1587920571.370995 sending message 105 to peer 0x10bad2000 (61 bytes)
+1587920571.371014 sending message 105 to peer 0x10bad2000 (55 bytes)
+1587920571.371034 sending message 105 to peer 0x10bad2000 (22 bytes)
+1587920571.371055 sending message 106 to peer 0x10bad2000 (0 bytes)
+1587920571.371080 sending message 200 to peer 0x10bad2000 (4 bytes)
+1587920571.371099 client loop enter
+1587920571.520442 peer 0x10bad2000 message 207
+1587920571.521753 sending message 208 to peer 0x10bad2000 (0 bytes)
+1587920580.485069 peer 0x10bad2000 message 203
+1587920580.485130 sending message 205 to peer 0x10bad2000 (0 bytes)
+1587920580.485507 peer 0x10bad2000 message 204
+1587920580.485527 client loop exit

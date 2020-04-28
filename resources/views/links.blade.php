@@ -15,8 +15,19 @@
       <ul>
         @foreach ($links as $link)
             <li class="link">
-              <a href="{{ $link->url }}" target="_blank">{{ $link->title }}</a>
-              <p>{{$link->description}}</p>
+              <div class="row">
+                <div class="col-md-11">
+                  <a href="{{ $link->url }}" target="_blank">{{ $link->title }}</a>
+                  <p>{{$link->description}}</p>
+                </div>
+                <div class="col-md-1">
+                  <form action="/link/{{ $link->id }}" method="post">
+                    @csrf
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-xs" aria-label="Left Align" id="del-link"><i class="fas fa-trash-alt"></i></button>
+                  </form>
+                </div>
+              </div>
             </li>
         @endforeach
       </ul>
